@@ -17,9 +17,10 @@ class Password(private var longitud: Int = 8, private var especiales: Boolean = 
     val numNumeros = password.count(c => c.isDigit)
     val numEspeciales = password.count(c => !c.isLetterOrDigit)
 
-    numMayusculas >= 1
+    numMayusculas >= 2
       && numMinusculas >= 1
       && numNumeros >= 1
+      && longitud >=5
       && ((numEspeciales >= 1 && especiales) || (numEspeciales == 0 && !especiales))
   }
 

@@ -1,6 +1,6 @@
 package ejercicios
 
-import models.{Password, Sexo}
+import models.Password
 
 import scala.io.StdIn.{readInt, readLine}
 
